@@ -56,7 +56,8 @@ INSTALLED_APPS = [
     'api',
     'leaflet',
     'map',
-    'djgeojson'
+    'djgeojson',
+    'listing'
 ]
 
 MIDDLEWARE = [

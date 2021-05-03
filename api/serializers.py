@@ -8,7 +8,7 @@ class HuntingSerializer(serializers.ModelSerializer):
     class Meta:
         model = HuntingSpot
         fields = (
-            'id','title' , 'description' ,'picture', 'geom'
+            'id','title' , 'description' ,'picture', 'geom','hardurl'
         )
         read_only_fields = ('id',)
         
