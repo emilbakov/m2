@@ -1,16 +1,15 @@
 {% load static %}
-{% load leaflet_tags %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% leaflet_js %}
-    {% leaflet_css %}
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
-    <link href="{% static 'css/leaflet1.css' %}" rel="stylesheet">
+    
     
     
   </head>
@@ -22,9 +21,7 @@
 
     {% block extra_body %}
     {% endblock extra_body %}
-    <div class="container mt-10 flex flex-wrap p-5 rounded-xl">
-        {% leaflet_map "main" %}
-    </div>
+    
     {% include "scripts.html" %}
     {% include "footer.html" %}
   </body>
