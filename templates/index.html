@@ -4,36 +4,45 @@
 
 {% block content %}
 
-
-<main class="mt-10 mb-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 border-b pb-10 mb-10 border-gray-200">
-  
-  <div class="sm:text-center lg:text-center " data-aos="fade-in">
+<div
+        class="relative pt-16 pb-16 flex content-center items-center justify-center"
+        style="min-height: 75vh;"
+      >
+        <div
+          class="absolute top-0 w-full h-full bg-cover"
+          style='background-image: url("static/fox.jpg");'
+        >          
+        </div>
+        <div class="sm:text-center lg:text-center " data-aos="fade-in">
     
-    <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl ">
-      <span class="block xl:inline">Ловни</span>
-      <span class="block text-red-600 xl:inline">стопанства</span>
-    </h1>
-    <p
-      class="mt-3 text-base text-black sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:text-center">
-      Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-      cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
-    </p>
-    <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-center">
-      <div class="rounded-md shadow">
-        <a
-          href="{% url 'spots' %}"
-          class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg md:px-10">
-          Ловни стопанства
-        </a>
-      </div>
-      <div class="mt-3 sm:mt-0 sm:ml-3">
-        <a href="{% url 'spots' %}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-red-700 bg-red-100 hover:bg-red-200 md:py-4 md:text-lg md:px-10">
-          Карта
-        </a>
-      </div>
-    </div>
+          <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl ">
+            <span class="block xl:inline">Ловни</span>
+            <span class="block text-red-600 xl:inline">стопанства</span>
+          </h1>
+          <p
+            class="mt-10 text-base text-black sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:text-center">
+            Държавни и частни ловни стопанства в България
+          </p>
+         
+          <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-center">
+            <div class="rounded-md shadow">
+              <a
+                href="{% url 'spots' %}"
+                class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg md:px-10">
+                Ловни стопанства
+              </a>
+            </div>
+            <div class="mt-3 sm:mt-0 sm:ml-3">
+              <a href="{% url 'spots' %}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-red-700 bg-red-100 hover:bg-red-200 md:py-4 md:text-lg md:px-10">
+                Карта
+              </a>
+            </div>
+        </div>
   </div>
-  <div>
+</div>    
+<main class="mt-10 mb-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 border-b pb-10 mb-10 border-gray-200">
+    
+    <div>
     <section class="relative mt-20 py-20 bg-white text-black">
         <div
           class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
@@ -58,7 +67,7 @@
               <img
                 alt="..."
                 class="max-w-full rounded-lg shadow-lg"
-                src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80"
+                src="static/2.jpg"
               />
             </div>
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4" data-aos="fade-left">
