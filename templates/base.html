@@ -11,6 +11,7 @@
     
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <link href="{% static 'css/leaflet1.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" />
     
     
   </head>
@@ -19,12 +20,12 @@
     
     {% block content %}
     {% endblock content%}
-
-    {% block extra_body %}
-    {% endblock extra_body %}
     <div class="container m-10 flex flex-wrap p-5 rounded-xl">
         {% leaflet_map "main" %}
     </div>
+    {% block extra_body %}
+    {% endblock extra_body %}
+    
     {% include "scripts.html" %}
     {% include "footer.html" %}
   </body>
