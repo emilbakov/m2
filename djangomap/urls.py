@@ -20,6 +20,7 @@ from django.contrib import admin
 from django.views.generic import TemplateView
 from djgeojson.views import GeoJSONLayerView
 
+from djangomap.view import ContactFormView
 from map.models import HuntingSpot
 from django.urls import path, include
 
@@ -31,6 +32,7 @@ urlpatterns = [
     path('listing/', include('listing.urls')),
     
 
+    url('contact/', ContactFormView.as_view(), name='contact'),
     url(r'^$', TemplateView.as_view(template_name='index.html'), name='home'),
     
     
