@@ -4,6 +4,7 @@ from django.db import models
 # Used to generate URLs by reversing the URL patterns
 from django.urls import reverse
 
+
 class HuntingSpot(models.Model):
 
     title = models.CharField(max_length=256)
@@ -23,7 +24,6 @@ class HuntingSpot(models.Model):
     def picture_url(self):
         return self.picture.url
 
-    
     
 
 # Create your models here.
