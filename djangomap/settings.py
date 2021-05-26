@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'djgeojson',
     'listing',
     'Sleep',
+    'search',
 ]
 
 MIDDLEWARE = [

@@ -15,7 +15,11 @@ class Animal(models.Model):
    
     
     def __str__(self):
-        return self.name 
+        return self.name
+
+    def get_absolute_url(self):
+        """Returns the url to access a detail record for this huntingspot."""
+        return reverse('animal-detail', args=[str(self.id)])     
 
 
 class HuntingSpot(models.Model):

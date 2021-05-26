@@ -31,6 +31,7 @@ urlpatterns = [
     path('api/', include('api.urls')),
     path('listing/', include('listing.urls')),
     path('sleep/', include('Sleep.urls')),
+    path('search/', include('search.urls')),
     
 
     url('contact/', ContactFormView.as_view(), name='contact'),
