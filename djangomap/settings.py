@@ -59,7 +59,8 @@ INSTALLED_APPS = [
     'leaflet',
     'map',
     'djgeojson',
-    'listing'
+    'listing',
+    'Sleep',
 ]
 
 MIDDLEWARE = [
@@ -147,7 +148,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR
+MEDIA_ROOT =os.path.join(BASE_DIR, 'media')
 STATICFILES_DIRS = [BASE_DIR , 'static',]
 
 # leaflet 'SPATIAL_EXTENT': ( max west/y min, max south/x min, max east/y max, max north/x max )

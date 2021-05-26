@@ -58,25 +58,25 @@
                   </svg>
                   <a href="?page={{ page_obj.previous_page_number }}">previous</a>
                 
-              </div>
-          {% endif %}
-          <div class="flex h-12 font-medium rounded-full bg-gray-200">
-            <div class="w-12 md:flex justify-center items-center hidden  cursor-pointer leading-5 transition duration-150 ease-in  rounded-full  ">{{ page_obj.number }}</div>
+      </div>
+     {% endif %}
+     <div class="flex h-12 font-medium rounded-full bg-gray-200">
+         <div class="w-12 md:flex justify-center items-center hidden  cursor-pointer leading-5 transition duration-150 ease-in  rounded-full  ">{{ page_obj.number }}</div>
          
-
-          {% if page_obj.has_next %}
-            <div class="h-12 w-12 ml-1 flex justify-center items-center rounded-full bg-gray-200 cursor-pointer">
+      </div>
+      {% if page_obj.has_next %}
+          <div class="h-12 w-12 ml-1 flex justify-center items-center rounded-full bg-gray-200 cursor-pointer">
                   
                 <a href="?page={{ page_obj.next_page_number }}">next</a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right w-6 h-6">
                     <polyline points="9 18 15 12 9 6"></polyline>
                 </svg>
                                            
-            </div>              
-              
-          {% endif %}
-        </span>
-  </div>     
+          </div>              
+           
+      {% endif %}
+      
+  </div>    
 </div>
 
 {% endblock content %}

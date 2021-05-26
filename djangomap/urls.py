@@ -30,6 +30,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     path('api/', include('api.urls')),
     path('listing/', include('listing.urls')),
+    path('sleep/', include('Sleep.urls')),
     
 
     url('contact/', ContactFormView.as_view(), name='contact'),
